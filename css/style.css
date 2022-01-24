@@ -1,0 +1,85 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@700&display=swap');
+
+
+/* common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #fff; */
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
+
+/* -----------------
+    nav bar
+-------------------- */
+.navigation {
+    max-height: 100px;
+}
+
+/* -------------------
+    carousel style
+---------------------- */
+.galaxy-overlay::after {
+content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: black;
+  opacity: 0.6;
+}
+
+.carousel-caption {
+    z-index: 2;
+}
+
+
+/*--------------------
+     package section
+---------------------- */
+.galaxy-package-margin {
+    margin-top: 150px;
+}
+.galaxy-text-color {
+    color:#848199;
+}
+.galaxy-hightlight-package-margin {
+    margin-top: -60px;
+}
+
+.galaxy-card-border {
+    border-radius: 26px;
+}
+
+.galaxy-plan-btn {
+    background-color:hsla(322, 81%, 77%, 0.1);
+}
+
+
+/*--------------------
+     media queries
+---------------------- */
+@media only screen and (max-width:574px) {
+    .carousel-item img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .galaxy-package-margin {
+        margin-top: 50px;
+    }
+
+    .galaxy-hightlight-package-margin {
+        margin-top: 0px;
+    }
+}

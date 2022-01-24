@@ -9,12 +9,204 @@
     <!-- bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="bg-white">
+    <!-- header start -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white navigation">
+            <div class="container">
+                <a class="navbar-brand" href="#">Galaxy Convention Center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="#">Subscribe</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- caurosel section -->
+        <section class="carousel-section">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item galaxy-overlay active ">
+                        <img src="images/wedding-carousal-1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="display-2">The perfect venue for your
+                                next event</h2>
+                            <p>Some representative placeholder content for the first slide.</p>
+                            <a href="https://www.booking.com/" target="_blank"
+                                class="btn bg-white text-primary btn-lg fw-bold fs-5 px-5" role="button">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item galaxy-overlay">
+                        <img src="images/wedding-carousal-2.png" class="d-block w-100 " alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="display-2">Second slide label</h2>
+                            <p>Some representative placeholder content for the second slide.</p>
+                            <a href="https://www.booking.com/" target="_blank"
+                                class="btn bg-white text-primary btn-lg fw-bold fs-5 px-5" role="button">Book Now</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item galaxy-overlay">
+                        <img src="images/wedding-carousal-3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-md-block">
+                            <h2 class="display-2">Third slide label</h2>
+                            <p>Some representative placeholder content for the third slide.</p>
+                            <a href="https://www.booking.com/" target="_blank"
+                                class="btn bg-white text-primary btn-lg fw-bold fs-5 px-5" role="button">Book Now</a>
+                        </div>
+                    </div>
 
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- Package section -->
+        <section class="container pt-5 pb-5">
+            <h3 class="display-3 fw-bold text-center">Our Package</h3>
+            <div class="row row-cols-1 row-cols-lg-4 g-4 galaxy-package-margin">
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title fw-bold display-6">$300</h5>
+                            <h6 class="card-title fw-bold fs-3 pt-2">Business fair</h6>
+                            <p class="card-text pt-2 galaxy-text-color">For most businesses event
+                                like book fair, craft fair.</p>
+                            <ul class="list-unstyled galaxy-text-color">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>limited space access</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Secuirty facility</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>event support</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Decoration design</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Per day bill</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 ps-3 ps-lg-0 text-lg-center">
+                            <button
+                                class="btn rounded-pill text-primary btn-lg fw-bold fs-6 px-5 border-0 galaxy-plan-btn ">Choose
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title fw-bold display-6">$300</h5>
+                            <h6 class="card-title fw-bold fs-3 pt-2">Business fair</h6>
+                            <p class="card-text pt-2 galaxy-text-color">For most businesses event
+                                like book fair, craft fair.</p>
+                            <ul class="list-unstyled galaxy-text-color">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>limited space access</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Secuirty facility</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>event support</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Decoration design</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Per day bill</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 ps-3 ps-lg-0 text-lg-center">
+                            <button
+                                class="btn rounded-pill text-primary btn-lg fw-bold fs-6 px-5 border-0 galaxy-plan-btn ">Choose
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div
+                        class="card h-100 border-0  bg-primary text-white rouded-3 shadow-lg position-relative galaxy-hightlight-package-margin galaxy-card-border">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title fw-bold display-6">$800</h5>
+                            <h6 class="card-title fw-bold fs-3 pt-2">Wedding plus</h6>
+                            <p class="card-text pt-2 text-light">For most businesses event
+                                like book fair, craft fair.</p>
+                            <ul class="list-unstyled text-light ">
+                                <li><i class="fas fa-check-circle text-light me-2"></i>limited space access</li>
+                                <li><i class="fas fa-check-circle text-light me-2"></i>Secuirty facility</li>
+                                <li><i class="fas fa-check-circle text-light me-2"></i>event support</li>
+                                <li><i class="fas fa-check-circle text-light me-2"></i>Decoration design</li>
+                                <li><i class="fas fa-check-circle text-light me-2"></i>Per day bill</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 ps-3 ps-lg-0 text-lg-center">
+                            <button
+                                class="btn btn-light rounded-pill text-primary btn-lg fw-bold fs-6 px-5 border-0">Choose
+                                plan</button>
+                        </div>
+                        <span class="position-absolute top-0 end-0 translate-middle badge rounded-pill bg-danger">
+                            Hot
+                            <span class="visually-hidden">unread messages</span>
+                        </span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100 border-0 mt-4 mt-lg-0">
+                        <div class="card-body mt-2">
+                            <h5 class="card-title fw-bold display-6">$300</h5>
+                            <h6 class="card-title fw-bold fs-3 pt-2">Business fair</h6>
+                            <p class="card-text pt-2 galaxy-text-color">For most businesses event
+                                like book fair, craft fair.</p>
+                            <ul class="list-unstyled galaxy-text-color">
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>limited space access</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Secuirty facility</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>event support</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Decoration design</li>
+                                <li><i class="fas fa-check-circle text-primary me-2"></i>Per day bill</li>
+                            </ul>
+                        </div>
+                        <div class="mb-4 ps-3 ps-lg-0 text-lg-center">
+                            <button
+                                class="btn rounded-pill text-primary btn-lg fw-bold fs-6 px-5 border-0 galaxy-plan-btn ">Choose
+                                plan</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
